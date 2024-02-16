@@ -96,6 +96,11 @@ button,
   padding: 12px;
   border: none;
   border-radius: 12px;
+
+  &:hover {
+    background-color: #FFF;
+    color: #000;
+  }
 }
 
 .text-white {
