@@ -1,0 +1,31 @@
+{
+  "name": "jpaedlc",
+  "version": "1.0.0",
+  "description": "The main JS file for JP's personal site",
+  "source": "_source/index.js",
+  "main": "index.js",
+  "targets": {
+    "default": {
+      "distDir": "."
+    },
+    "main": false
+
+  },
+  "browserslist": "> 0.25%",
+  "scripts": {
+    "watch": "parcel watch",
+    "build": "parcel build"
+  },
+  "keywords": [
+    "parcel",
+    "gsap"
+  ],
+  "author": "Samuel Bacay",
+  "license": "SEE LICENSE IN LICENSE",
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5"
+  }
+}
