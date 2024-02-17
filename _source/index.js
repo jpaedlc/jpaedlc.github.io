@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
   },
   '<');
 
-  firstSectionIn.from('#magnifying-glass', {
+  firstSectionIn.from('#magnifying-glass svg', {
     scale: 5,
     opacity: 0
   },
@@ -39,8 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
   },
   0);
 
-  firstSectionOut.to('#magnifying-glass', {
-    translateY: '200%',
+  firstSectionOut.to('#magnifying-glass svg', {
     scale: 5,
     opacity: 0
   },
@@ -58,6 +57,12 @@ document.addEventListener('DOMContentLoaded', function() {
   thumbprint.from('#thumbprint',{
     opacity: 0
   });
+
+  // Prepare transition of magnifying glass behind the scenes
+  thumbprint.to('#magnifying-glass', {
+    translateY: '200%'
+  },
+  0);
 
   let footprints = gsap.timeline({
     scrollTrigger: {
@@ -84,6 +89,11 @@ document.addEventListener('DOMContentLoaded', function() {
     opacity: 0
   });
 
+  footprints.to('#magnifying-glass', {
+    translateY: '400%',
+  },
+  0);
+
   let fifthSectionIn = gsap.timeline({
     scrollTrigger: {
       trigger: '#section-5',
@@ -93,11 +103,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  fifthSectionIn.to('#magnifying-glass', {
-    translateY: '400%',
+  fifthSectionIn.to('#magnifying-glass svg', {
     scale: 1,
     opacity: 1
-  });
+  },
+  0);
 
   fifthSectionIn.from('#collaborators', {
     scale: 0

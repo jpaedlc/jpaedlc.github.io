@@ -142,13 +142,13 @@
       this[globalName] = mainExports;
     }
   }
-})({"9tM0V":[function(require,module,exports) {
+})({"cCljO":[function(require,module,exports) {
 var _asyncToGenerator = require("@swc/helpers/_/_async_to_generator");
 var _toConsumableArray = require("@swc/helpers/_/_to_consumable_array");
 var _tsGenerator = require("@swc/helpers/_/_ts_generator");
 var global = arguments[3];
 var HMR_HOST = null;
-var HMR_PORT = 51035;
+var HMR_PORT = 57556;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "ddb6ac7c9a3a9178";
 module.bundle.HMR_BUNDLE_ID = "796f569ca1743cc6";
@@ -1467,7 +1467,7 @@ document.addEventListener("DOMContentLoaded", function() {
     firstSectionIn.from("#job", {
         scale: 0
     }, "<");
-    firstSectionIn.from("#magnifying-glass", {
+    firstSectionIn.from("#magnifying-glass svg", {
         scale: 5,
         opacity: 0
     }, "<");
@@ -1485,8 +1485,7 @@ document.addEventListener("DOMContentLoaded", function() {
     firstSectionOut.to("#job", {
         scale: 0
     }, 0);
-    firstSectionOut.to("#magnifying-glass", {
-        translateY: "200%",
+    firstSectionOut.to("#magnifying-glass svg", {
         scale: 5,
         opacity: 0
     }, 0);
@@ -1501,6 +1500,10 @@ document.addEventListener("DOMContentLoaded", function() {
     thumbprint.from("#thumbprint", {
         opacity: 0
     });
+    // Prepare transition of magnifying glass behind the scenes
+    thumbprint.to("#magnifying-glass", {
+        translateY: "200%"
+    }, 0);
     var footprints = (0, _gsap.gsap).timeline({
         scrollTrigger: {
             trigger: "#footprints",
@@ -1521,6 +1524,9 @@ document.addEventListener("DOMContentLoaded", function() {
     footprints.from("#footprints #footprint-4", {
         opacity: 0
     });
+    footprints.to("#magnifying-glass", {
+        translateY: "400%"
+    }, 0);
     var fifthSectionIn = (0, _gsap.gsap).timeline({
         scrollTrigger: {
             trigger: "#section-5",
@@ -1529,11 +1535,10 @@ document.addEventListener("DOMContentLoaded", function() {
             scrub: true
         }
     });
-    fifthSectionIn.to("#magnifying-glass", {
-        translateY: "400%",
+    fifthSectionIn.to("#magnifying-glass svg", {
         scale: 1,
         opacity: 1
-    });
+    }, 0);
     fifthSectionIn.from("#collaborators", {
         scale: 0
     }, 0);
@@ -8045,6 +8050,6 @@ Observer.getById = function(id) {
 };
 _getGSAP() && gsap.registerPlugin(Observer);
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"hyCVi"}]},["9tM0V","1Ak3V"], "1Ak3V", "parcelRequirece1c")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"hyCVi"}]},["cCljO","1Ak3V"], "1Ak3V", "parcelRequirece1c")
 
 //# sourceMappingURL=index.js.map
