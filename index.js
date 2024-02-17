@@ -1462,14 +1462,17 @@ document.addEventListener("DOMContentLoaded", function() {
     (0, _gsap.gsap).registerPlugin((0, _scrollTrigger.ScrollTrigger));
     var firstSectionIn = (0, _gsap.gsap).timeline();
     firstSectionIn.from("#name", {
-        scale: 0
+        scale: 0,
+        duration: 1
     });
     firstSectionIn.from("#job", {
-        scale: 0
+        scale: 0,
+        duration: 1
     }, "<");
     firstSectionIn.from("#magnifying-glass svg", {
         scale: 5,
-        opacity: 0
+        opacity: 0,
+        duration: 1
     }, "<");
     var firstSectionOut = (0, _gsap.gsap).timeline({
         scrollTrigger: {
