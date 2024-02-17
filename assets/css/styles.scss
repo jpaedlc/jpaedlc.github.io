@@ -298,6 +298,10 @@ button,
     @media only screen and (min-width: $iPadMiniLandscape) {
       width: calc(((100% - (#{$gutter} * 11)) * (1/3) + #{$gutter} * 3));
     }
+
+    @media only screen and (min-width: $Desktop) {
+      width: calc(((100% - (#{$gutter} * 11)) * (1/4) + #{$gutter} * 3));
+    }
   }
 }
 
@@ -340,6 +344,10 @@ button,
   @media only screen and (min-width: $iPadMiniLandscape) {
     width: calc((100% - (#{$gutter} * 11)) * (1/3) + #{$gutter} * 3);
     top: 236px;
+  }
+
+  @media only screen and (min-width: $Desktop) {
+    width: calc((100% - (#{$gutter} * 11)) * (1/5) + #{$gutter} * 3);
   }
 }
 
