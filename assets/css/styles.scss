@@ -421,12 +421,17 @@ button,
 
 #home article > #section-10 {
   > video {
+    display: hidden;
     top: 50%;
     right: 50%;
-    transform: translate(50%, calc(-100vh - 24px));
+    transform: translate(50%, -50%);
+
+    @media only screen and (min-width: $iPadMiniPortrait) {
+      top: 47%;
+    }
 
     @media only screen and (min-width: $iPadMiniLandscape) {
-      transform: translate(50%, -50%);
+      top: 50%;
     }
   }
 }
