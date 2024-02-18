@@ -137,26 +137,18 @@ button,
 
 #home {
   width: 100vw;
-  overflow-x: hidden;
 }
 
 #magnifying-glass {
-  width: calc(100vw - 24px);
-  height: 100vh;
-  padding: 0 12px;
+  width: calc(100vw);
+  height: 600vh;
   position: absolute;
   right: 50%;
   overflow-x: hidden;
   transform: translateX(50%);
 
-  @media only screen and (min-width: $iPadMiniPortrait) {
-    width: calc(100vw - 40px);
-    padding: 0 20px;
-  }
-
-  @media only screen and (min-width: $iPadMiniLandscape) {
-    width: 1120px;
-    margin: 0 auto;
+  .grid {
+    height: 100vh;
   }
 
   svg {
