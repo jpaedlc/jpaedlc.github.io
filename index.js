@@ -1554,6 +1554,17 @@ document.addEventListener("DOMContentLoaded", function() {
     sixthSectionIn.from("#skills", {
         scale: 0
     }, 0);
+    var footerIn = (0, _gsap.gsap).timeline({
+        scrollTrigger: {
+            trigger: "#section-13",
+            start: "top bottom",
+            end: "bottom bottom",
+            scrub: true
+        }
+    });
+    footerIn.to(".down-arrow", {
+        opacity: 0
+    });
     // Play video when it enter the viewport
     var videos = document.querySelectorAll("video");
     videos.forEach(function(video) {

@@ -126,6 +126,19 @@ document.addEventListener('DOMContentLoaded', function() {
   },
   0);
 
+  let footerIn = gsap.timeline({
+    scrollTrigger: {
+      trigger: '#section-13',
+      start: 'top bottom',
+      end: 'bottom bottom',
+      scrub: true
+    }
+  });
+
+  footerIn.to('.down-arrow', {
+    opacity: 0
+  });
+
   // Play video when it enter the viewport
   let videos = document.querySelectorAll("video");
   videos.forEach((video) => {

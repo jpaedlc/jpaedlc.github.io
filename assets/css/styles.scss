@@ -143,7 +143,7 @@ button,
 .down-arrow {
   width: 48px;
   height: 48px;
-  position: absolute;
+  position: fixed;
   right: 50%;
   bottom: 24px;
   transform: translateX(51%);
