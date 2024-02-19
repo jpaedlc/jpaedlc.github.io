@@ -7,6 +7,11 @@ $iPadMiniLandscape: 1024px;
 $Desktop: 1201px;
 $gutter: 20px;
 
+@keyframes hop {
+    from { transform: translate(50%, 0); }
+      to { transform: translate(50%, -100%); }
+}
+
 a {
   color: #E34234;
   text-decoration: none;
@@ -133,6 +138,16 @@ button,
   @media only screen and (min-width: $Desktop) {
     width: 1120px;
   }
+}
+
+.down-arrow {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  right: 50%;
+  bottom: 24px;
+  transform: translateX(51%);
+  animation: 0.5s cubic-bezier(.83, .67, .17, .67) 0s infinite alternate both running hop;
 }
 
 #home {
