@@ -324,6 +324,7 @@ button,
 
   @media only screen and (min-width: $iPadMiniLandscape) {
     width: calc((100% - (#{$gutter} * 11)) * (2/12) + #{$gutter} * 3);
+    margin-top: 240px;
   }
 }
 

@@ -1496,7 +1496,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var thumbprint = (0, _gsap.gsap).timeline({
         scrollTrigger: {
             trigger: "#thumbprint",
-            start: "top +=80%",
+            start: "top +=60%",
             end: "center center",
             scrub: true
         }
