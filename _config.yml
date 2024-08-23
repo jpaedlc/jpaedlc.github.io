@@ -45,6 +45,7 @@ sass:
 exclude:
   - .sass-cache/
   - .jekyll-cache/
+  - .parcel-cache/
   - gemfiles/
   - Gemfile
   - Gemfile.lock
