@@ -341,8 +341,8 @@ button,
   width: calc((100% - (#{$gutter} * 5)) * 0.5 + #{$gutter} * 3);
   position: absolute;
   top: 254px;
-  right: 50%;
-  transform: translate(50%, -50%);
+  right: 50.5%;
+  transform: translate(50%, -49.5%);
 
   @media only screen and (min-width: $iPadMiniPortrait) {
     width: calc((100% - (#{$gutter} * 11)) * (1/2) + #{$gutter} * 7);
