@@ -507,7 +507,7 @@ button,
     }
 
     @media only screen and (min-width: $Desktop) {
-      width: 360px;
+      width: 300px;
       height: auto;
       margin-left: calc(((100% - #{$gutter} * 11) / 12) * 3 + #{$gutter} * 2);
     }
